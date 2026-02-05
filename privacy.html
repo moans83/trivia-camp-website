@@ -14,6 +14,7 @@
       --accent: #16a34a; /* brand green */
       --border: #e5e7eb;
       --link: #15803d;
+      --pill-bg: rgba(22, 163, 74, 0.12);
     }
 
     * {
@@ -39,14 +40,20 @@
       border-bottom: 1px solid var(--border);
     }
 
-    .brand {
-      font-size: 20px;
+    .brand-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--pill-bg);
+      color: var(--accent);
+      border-radius: 999px;
+      font-size: 18px;
       font-weight: 700;
-      color: var(--text);
       text-decoration: none;
     }
 
-    .brand:hover {
+    .brand-pill:hover {
       text-decoration: underline;
     }
 
@@ -116,17 +123,6 @@
       color: var(--muted);
       text-align: center;
     }
-
-    .badge {
-      display: inline-block;
-      background: rgba(22, 163, 74, 0.1);
-      color: var(--accent);
-      padding: 6px 12px;
-      border-radius: 999px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 16px;
-    }
   </style>
 </head>
 
@@ -134,13 +130,14 @@
 
   <!-- HEADER -->
   <header class="site-header">
-    <a href="index.html" class="brand">Trivia Camp</a>
+    <a href="index.html" class="brand-pill">
+      Trivia Camp 🌱
+    </a>
     <img src="login-bot.png" alt="Scout the Trail Guide" class="header-bot" />
   </header>
 
   <!-- CONTENT -->
   <div class="container">
-    <span class="badge">Trivia Camp 🌱</span>
     <h1>Privacy Policy</h1>
     <p class="subtitle">
       We care deeply about kids’ privacy and keeping things simple and safe.
