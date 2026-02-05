@@ -11,7 +11,7 @@
       --card: #f9fafb;
       --text: #000000;
       --muted: #555555;
-      --accent: #16a34a; /* brand green */
+      --accent: #16a34a;
       --border: #e5e7eb;
       --link: #15803d;
     }
@@ -30,10 +30,44 @@
       line-height: 1.6;
     }
 
+    /* ---------- HEADER ---------- */
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(22, 163, 74, 0.1);
+      color: var(--accent);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;        /* ✅ NO underline */
+    }
+
+    .brand-button:hover,
+    .brand-button:focus,
+    .brand-button:active {
+      text-decoration: none;        /* ✅ still no underline */
+      background: rgba(22, 163, 74, 0.16);
+    }
+
+    .bot-image {
+      height: 48px;                 /* 👈 robot size */
+      width: auto;
+    }
+
+    /* ---------- CONTENT ---------- */
     .container {
       max-width: 760px;
       margin: 0 auto;
-      padding: 32px 20px 64px;
+      padding: 40px 20px 64px;
     }
 
     h1 {
@@ -62,7 +96,6 @@
 
     p {
       margin: 0 0 12px;
-      color: var(--text);
     }
 
     ul {
@@ -90,122 +123,98 @@
       color: var(--muted);
       text-align: center;
     }
-
-    .badge {
-      display: inline-block;
-      background: rgba(22, 163, 74, 0.1);
-      color: var(--accent);
-      padding: 6px 12px;
-      border-radius: 999px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 16px;
-    }
   </style>
 </head>
 
 <body>
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <a href="/" class="brand-button">Trivia Camp 🌱</a>
+    <img src="login-bot.png" alt="Trivia Camp Bot" class="bot-image" />
+  </div>
+
+  <!-- CONTENT -->
   <div class="container">
-    <span class="badge">Trivia Camp 🌱</span>
     <h1>Terms of Use</h1>
     <p class="subtitle">
-      Simple rules to keep Trivia Camp fun, safe, and fair for everyone.
+      Please read these terms carefully before using Trivia Camp.
     </p>
 
     <div class="card">
       <h2>Acceptance of Terms</h2>
       <p>
-        By using Trivia Camp, you agree to these Terms of Use. If you do not
-        agree, please do not use the app.
+        By downloading or using Trivia Camp, you agree to these Terms of Use.
+        If you do not agree, please do not use the app.
       </p>
     </div>
 
     <div class="card">
       <h2>Who Can Use Trivia Camp</h2>
       <p>
-        Trivia Camp is designed for families and children. Accounts must be
-        created and managed by a parent or legal guardian.
+        Trivia Camp is designed for families and children. Accounts are created
+        and managed by parents or legal guardians.
       </p>
-    </div>
-
-    <div class="card">
-      <h2>Using the App</h2>
-      <ul>
-        <li>Use Trivia Camp for personal, non-commercial purposes only</li>
-        <li>Do not attempt to misuse, disrupt, or reverse engineer the app</li>
-        <li>Do not upload harmful, offensive, or inappropriate content</li>
-      </ul>
     </div>
 
     <div class="card">
       <h2>Subscriptions & Payments</h2>
       <p>
-        Trivia Camp may offer free trials and paid subscriptions. All payments
-        and subscription management are handled by Apple through the App Store.
+        Some features require a paid subscription. Subscriptions are billed
+        through Apple’s App Store and managed entirely by Apple.
       </p>
       <p>
-        You can manage or cancel subscriptions at any time in your Apple ID
-        settings.
+        You can manage or cancel your subscription at any time through your
+        Apple account settings.
       </p>
     </div>
 
     <div class="card">
       <h2>Free Trials</h2>
       <p>
-        Free trials provide full access for a limited time. After the trial
-        ends, access may be restricted unless a subscription is active.
+        Trivia Camp may offer a free trial. After the trial ends, access may
+        require a paid subscription unless canceled through Apple.
       </p>
+    </div>
+
+    <div class="card">
+      <h2>Acceptable Use</h2>
+      <ul>
+        <li>Use Trivia Camp for personal, non-commercial purposes</li>
+        <li>Do not attempt to abuse, hack, or disrupt the service</li>
+        <li>Respect other users and the app experience</li>
+      </ul>
     </div>
 
     <div class="card">
       <h2>Audio & AI Features</h2>
       <p>
-        Trivia Camp uses AI-generated content and optional audio features. While
-        we aim for accuracy and age-appropriate content, occasional mistakes
-        may occur.
-      </p>
-      <p>
-        Audio features can be disabled in settings.
+        Trivia Camp includes optional audio and AI-powered features designed
+        to enhance learning. These features may occasionally make mistakes and
+        should be used for fun and educational purposes only.
       </p>
     </div>
 
     <div class="card">
-      <h2>Intellectual Property</h2>
+      <h2>Termination</h2>
       <p>
-        All content, designs, characters, and features in Trivia Camp are owned
-        by Trivia Camp or its licensors. You may not copy or reuse them without
-        permission.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Account Termination</h2>
-      <p>
-        You may stop using Trivia Camp at any time. We reserve the right to
-        suspend or terminate accounts that violate these terms.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Disclaimer</h2>
-      <p>
-        Trivia Camp is provided “as is.” We do our best to provide a great
-        experience, but we cannot guarantee uninterrupted or error-free use.
+        We may suspend or terminate access if these terms are violated.
+        You may stop using the app at any time.
       </p>
     </div>
 
     <div class="card">
       <h2>Changes to These Terms</h2>
       <p>
-        We may update these Terms of Use from time to time. Continued use of the
-        app means you accept the updated terms.
+        We may update these Terms of Use occasionally. Continued use of Trivia
+        Camp means you accept any changes.
       </p>
     </div>
 
     <div class="card">
       <h2>Contact</h2>
       <p>
-        Questions? Reach us at
+        Questions about these terms? Contact us at
         <a href="mailto:support@triviacamp.app">support@triviacamp.app</a>
       </p>
     </div>
@@ -214,5 +223,6 @@
       © 2026 Trivia Camp · Last updated March 2026
     </div>
   </div>
+
 </body>
 </html>
