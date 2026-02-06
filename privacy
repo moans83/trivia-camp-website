@@ -130,7 +130,7 @@
 
   <!-- HEADER -->
   <header class="site-header">
-    <a href="/home" class="brand-pill">
+    <a href="/home.html" class="brand-pill">
       Trivia Camp ⛺
     </a>
     <img src="login-bot.png" alt="Scout the Trail Guide" class="header-bot" />
