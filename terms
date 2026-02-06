@@ -131,7 +131,7 @@
 
   <!-- TOP BAR -->
   <div class="top-bar">
-    <a href="/home" class="brand-button">Trivia Camp ⛺</a>
+    <a href="/home.html" class="brand-button">Trivia Camp ⛺</a>
     <img src="login-bot.png" alt="Trivia Camp Bot" class="bot-image" />
   </div>
 
