@@ -1,44 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Trivia Camp</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --muted: #555555;
+      --accent: #16a34a; /* brand green */
+      --pill-bg: rgba(22, 163, 74, 0.12);
+      --border: #e5e7eb;
+      --link: #15803d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+                   "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* ---------- HEADER ---------- */
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--pill-bg);
+      color: var(--accent);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .brand-button:hover {
+      background: rgba(22, 163, 74, 0.18);
+    }
+
+    /* ---------- MAIN ---------- */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
       text-align: center;
-      padding: 60px 20px;
-      background-color: #ffffff;
-      color: #222;
     }
+
     h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
+      font-size: 2.2rem;
+      margin-bottom: 12px;
     }
-    p {
-      font-size: 18px;
-      margin-bottom: 30px;
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--muted);
+      margin-bottom: 36px;
     }
-    a {
+
+    .hero-image {
+      width: 260px;
+      max-width: 80%;
+      margin: 0 auto 32px;
       display: block;
-      margin: 10px 0;
-      color: #6b4cc2;
+    }
+
+    .intro {
+      font-size: 1.05rem;
+      max-width: 520px;
+      margin: 0 auto 40px;
+      color: var(--text);
+    }
+
+    /* ---------- FOOTER LINKS ---------- */
+    .links {
+      margin-top: 48px;
+      font-size: 0.95rem;
+    }
+
+    .links a {
+      margin: 0 12px;
+      color: var(--link);
       text-decoration: none;
       font-weight: 500;
     }
-    a:hover {
+
+    .links a:hover {
       text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: var(--muted);
     }
   </style>
 </head>
+
 <body>
 
-  <h1>Trivia Camp ⛺🎉</h1>
-  <p>A fun and educational trivia app for kids and families.</p>
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <span class="brand-button">Trivia Camp ⛺</span>
+  </div>
 
-  <a href="/privacy.html">Privacy Policy</a>
-  <a href="/terms.html">Terms of Service</a>
+  <!-- MAIN CONTENT -->
+  <div class="container">
+    <img
+      src="trail-bot3.png"
+      alt="Scout the Trivia Camp trail guide"
+      class="hero-image"
+    />
+
+    <h1>Welcome to Trivia Camp</h1>
+    <p class="subtitle">
+      Learning, laughs, and little victories — one question at a time.
+    </p>
+
+    <p class="intro">
+      Trivia Camp is a fun, kid-friendly trivia app designed for families.
+      Kids explore topics they love, earn badges, and build confidence — while
+      parents get a calm, safe experience they can trust.
+    </p>
+
+    <div class="links">
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Use</a>
+    </div>
+
+    <div class="footer">
+      © 2026 Trivia Camp
+    </div>
+  </div>
 
 </body>
 </html>
