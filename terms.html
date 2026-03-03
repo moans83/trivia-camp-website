@@ -16,9 +16,7 @@
       --link: #15803d;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -30,7 +28,6 @@
       line-height: 1.6;
     }
 
-    /* ---------- HEADER ---------- */
     .top-bar {
       display: flex;
       align-items: center;
@@ -48,33 +45,28 @@
       padding: 10px 16px;
       border-radius: 999px;
       font-weight: 600;
-      text-decoration: none;        /* ✅ NO underline */
+      text-decoration: none;
     }
 
     .brand-button:hover,
     .brand-button:focus,
     .brand-button:active {
-      text-decoration: none;        /* ✅ still no underline */
+      text-decoration: none;
       background: rgba(22, 163, 74, 0.16);
     }
 
     .bot-image {
-      height: 55px;                 /* 👈 robot size */
+      height: 55px;
       width: auto;
-
     }
 
-    /* ---------- CONTENT ---------- */
     .container {
       max-width: 760px;
       margin: 0 auto;
       padding: 40px 20px 64px;
     }
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 8px;
-    }
+    h1 { font-size: 2rem; margin-bottom: 8px; }
 
     .subtitle {
       color: var(--muted);
@@ -89,24 +81,13 @@
       margin-bottom: 20px;
     }
 
-    h2 {
-      font-size: 1.25rem;
-      margin-top: 0;
-      margin-bottom: 12px;
-    }
+    h2 { font-size: 1.25rem; margin-top: 0; margin-bottom: 12px; }
 
-    p {
-      margin: 0 0 12px;
-    }
+    p { margin: 0 0 12px; }
 
-    ul {
-      margin: 8px 0 0 18px;
-      padding: 0;
-    }
+    ul { margin: 8px 0 0 18px; padding: 0; }
 
-    li {
-      margin-bottom: 8px;
-    }
+    li { margin-bottom: 8px; }
 
     a {
       color: var(--link);
@@ -114,9 +95,7 @@
       font-weight: 500;
     }
 
-    a:hover {
-      text-decoration: underline;
-    }
+    a:hover { text-decoration: underline; }
 
     .footer {
       margin-top: 48px;
@@ -129,13 +108,11 @@
 
 <body>
 
-  <!-- TOP BAR -->
   <div class="top-bar">
     <a href="/home.html" class="brand-button">Trivia Camp ⛺</a>
     <img src="login-bot.png" alt="Trivia Camp Bot" class="bot-image" />
   </div>
 
-  <!-- CONTENT -->
   <div class="container">
     <h1>Terms of Use</h1>
     <p class="subtitle">
@@ -161,20 +138,29 @@
     <div class="card">
       <h2>Subscriptions & Payments</h2>
       <p>
-        Some features require a paid subscription. Subscriptions are billed
-        through Apple’s App Store and managed entirely by Apple.
+        Some features of Trivia Camp require a paid subscription. Subscriptions
+        are billed through Apple’s App Store and are managed entirely by Apple.
+      </p>
+      <p>
+        Subscriptions automatically renew unless canceled at least 24 hours
+        before the end of the current subscription period.
+      </p>
+      <p>
+        Your Apple ID account will be charged for renewal within 24 hours prior
+        to the end of the current period at the price selected.
       </p>
       <p>
         You can manage or cancel your subscription at any time through your
-        Apple account settings.
+        Apple account settings after purchase.
       </p>
     </div>
 
     <div class="card">
       <h2>Free Trials</h2>
       <p>
-        Trivia Camp may offer a free trial. After the trial ends, access may
-        require a paid subscription unless canceled through Apple.
+        Trivia Camp may offer a free trial. If a free trial is offered, it will
+        automatically convert to a paid subscription unless canceled before the
+        trial period ends through your Apple account settings.
       </p>
     </div>
 
@@ -182,7 +168,7 @@
       <h2>Acceptable Use</h2>
       <ul>
         <li>Use Trivia Camp for personal, non-commercial purposes</li>
-        <li>Do not attempt to abuse, hack, or disrupt the service</li>
+        <li>Do not attempt to abuse, hack, reverse engineer, or disrupt the service</li>
         <li>Respect other users and the app experience</li>
       </ul>
     </div>
@@ -192,14 +178,14 @@
       <p>
         Trivia Camp includes optional audio and AI-powered features designed
         to enhance learning. These features may occasionally make mistakes and
-        should be used for fun and educational purposes only.
+        are provided for entertainment and educational purposes only.
       </p>
     </div>
 
     <div class="card">
       <h2>Termination</h2>
       <p>
-        We may suspend or terminate access if these terms are violated.
+        We may suspend or terminate access if these Terms are violated.
         You may stop using the app at any time.
       </p>
     </div>
